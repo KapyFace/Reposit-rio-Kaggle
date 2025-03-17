@@ -12,4 +12,6 @@ if __name__ == "__main__":
     download_data(dataset_name, download_path)
     generate_report(download_path, file_name)
 
+    file_path = f"{download_path}/{file_name}"
+
     model = run_pipeline(file_path)
